@@ -1,0 +1,478 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f3f3f3;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .form-title {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .input-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+  }
+  
+  .input-group i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #888;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 0.75rem 2.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .input-group input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .input-group label {
+    position: absolute;
+    left: 2.5rem;
+    top: -5px;
+    font-size: 0.8rem;
+    color: #666;
+    background-color: #fff;
+    padding: 0 5px;
+    display: none;
+  }
+  
+  .input-group input:focus + label,
+  .input-group input:not(:placeholder-shown) + label {
+    display: inline-block;
+  }
+  
+  .btn {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .or {
+    text-align: center;
+    color: #aaa;
+    font-size: 0.9rem;
+    margin: 1rem 0;
+  }
+  
+  .icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .icons i {
+    font-size: 1.5rem;
+    color: #888;
+    cursor: pointer;
+  }
+  
+  .icons i:hover {
+    color: #007bff;
+  }
+  
+  /* Links */
+  .links {
+    display: flex;
+    justify-content: space-around;
+    padding:0 4rem;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  .links p {
+    margin-bottom: 0.5rem;
+    color: #666;
+    font-size: 0.9rem;
+  }
+  button{
+    color:rgb(125, 125, 235);
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .links button {
+    background: none;
+    border: none;
+    color: #007bff;
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
+  
+  .links button:hover {
+    text-decoration: underline;
+  }
+  
+  /* Recover password link */
+  .Recover {
+    text-align: right;
+    font-size: 0.9rem;
+  }
+  
+  .Recover a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .Recover a:hover {
+    text-decoration: underline;
+  }
+
+  /* styles.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 400px;
+    width: 100%;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+p {
+    color: #666;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="email"],
+input[type="password"] {
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+button[type="submit"] {
+    background-color: #5e72e4;
+    color: #fff;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #4b60d3;
+}
+
+a {
+    display: block;
+    color: #5e72e4;
+    text-decoration: none;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #4b60d3;
+}
+
+.admin-link {
+    margin-top: 1.5rem;
+    font-weight: bold;
+}
+/*style for login page*/
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Center the page content */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+}
+
+/* Form container styling */
+form {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Input fields styling */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Button styling */
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+    form {
+        padding: 1.5rem;
+    }
+}
+/*css for registration page*/
+/* Reset some basic elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Center the form */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f2f5; /* Light background for contrast */
+}
+
+/* Form styling */
+form {
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    background-color: #ffffff; /* White background for the form */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Input fields */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ced4da; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+/* Change border color on focus */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+select:focus {
+    border-color: #007bff; /* Change border color to Bootstrap primary color on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Submit button */
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    color: #ffffff; /* Text color */
+    background-color: #007bff; /* Bootstrap primary color */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+/* Change background color on hover */
+button[type="submit"]:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Placeholder styling */
+input::placeholder {
+    color: #6c757d; /* Light gray for placeholder text */
+}
+
+/* Optional: Add styles for error messages */
+.error-message {
+    color: #dc3545; /* Bootstrap danger color */
+    font-size: 14px; /* Smaller font for error messages */
+    margin-top: -10px; /* Slightly raise error messages */
+    margin-bottom: 15px; /* Space below error messages */
+}
+
+/* Styling for the role selection dropdown */
+select {
+    -webkit-appearance: none; /* Remove default arrow in Safari */
+    -moz-appearance: none; /* Remove default arrow in Firefox */
+    appearance: none; /* Remove default arrow in modern browsers */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><polygon points="0,0 20,0 10,10" fill="#007bff"/></svg>'); /* Add a custom arrow */
+    background-repeat: no-repeat; /* No repeat */
+    background-position: right 10px center; /* Position the arrow */
+    background-size: 12px; /* Size of the arrow */
+    padding-right: 40px; /* Space for the arrow */
+}
+
+
+/*css for index.php*/
+
+h1, h2 {
+    color: #343a40; /* Dark color for headings */
+    text-align: center; /* Center the headings */
+}
+
+nav {
+    margin-bottom: 20px; /* Space below the navigation */
+}
+
+footer {
+    position: relative; /* Keeps the footer at the bottom */
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align items at the start */
+    align-items: center;
+    min-height: 100vh; /* Ensures the body takes full height of the viewport */
+    margin: 0; /* Removes default margin */
+    background-color: #f8f9fa; /* Light background color for better contrast */
+}
+
+main {
+    max-width: 800px; /* Adjust this value as needed */
+    width: 100%; /* Ensures the main section takes full width available */
+    padding: 20px; /* Adds some padding around the content */
+    text-align: center; /* Centers text within the main section */
+    background-color: #ffffff; /* White background for main content */
+    border-radius: 8px; /* Slightly round the corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+    margin-bottom: 20px; /* Space below the main section */
+}
+
+p {
+    line-height: 1.6; /* Increases line spacing for better readability */
+}
+
+.alert {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Success alert */
+.alert-success {
+    background-color: #d4edda; /* Light green background */
+    color: #155724; /* Dark green text */
+    border: 1px solid #c3e6cb; /* Light green border */
+}
+
+/* Error alert */
+.alert-danger {
+    background-color: #f8d7da; /* Light red background */
+    color: #721c24; /* Dark red text */
+    border: 1px solid #f5c6cb; /* Light red border */
+}
+
+
+  
